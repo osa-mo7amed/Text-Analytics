@@ -436,7 +436,7 @@
 </main>
 
 <script>
-// ── Data ──────────────────────────────────────────────────────────────────
+// Data 
 const reviewData = {
   Positive: [
     {username:"Sozhan Vithya", rating:5, review:"Good app, easy to use and drivers are always friendly."},
@@ -472,12 +472,12 @@ const allReviews = [
   ...reviewData.Neutral.map(r => ({...r, sentiment:'Neutral'})),
 ];
 
-// ── Chart.js defaults ─────────────────────────────────────────────────────
+// Data for Chart.js
 Chart.defaults.color = '#a0aec0';
 Chart.defaults.borderColor = '#2d3748';
 Chart.defaults.font.family = 'Segoe UI';
 
-// ── Charts ────────────────────────────────────────────────────────────────
+// Charts
 new Chart(document.getElementById('sentBar'), {
   type:'bar',
   data:{
@@ -569,7 +569,7 @@ new Chart(document.getElementById('topicChart'), {
     scales:{x:{stacked:false,grid:{display:false}},y:{stacked:false,grid:{color:'rgba(255,255,255,.05)'}}}}
 });
 
-// ── Review rendering ──────────────────────────────────────────────────────
+// Review rendering
 function sentColor(s){ return s==='Positive'?'#27ae60':s==='Negative'?'#e74c3c':'#f39c12'; }
 function stars(n){ return '★'.repeat(n)+'☆'.repeat(5-n); }
 
@@ -601,7 +601,7 @@ function filterReviews(sentiment, btn){
 
 renderReviews(allReviews);
 
-// ── Page navigation ───────────────────────────────────────────────────────
+// Page navigation
 function showPage(id, btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
