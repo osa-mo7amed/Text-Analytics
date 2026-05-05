@@ -195,18 +195,18 @@
   <div class="grid g2">
     <div class="card" style="--accent-color:#3498db">
       <h3>🏆 Best Model — Logistic Regression</h3>
-      <div class="big" style="color:#3498db">79.2%</div>
+      <div class="big" style="color:#3498db">79.7%</div>
       <div class="sub">Test Accuracy · TF-IDF Features (5,000 terms, bigrams)</div>
       <div style="margin-top:12px">
-        <span class="badge badge-blue">CV: 79.4% ± 2.1%</span>
+        <span class="badge badge-blue">CV: 82.5% ± 2.17%</span>
       </div>
     </div>
     <div class="card" style="--accent-color:#e67e22">
       <h3>📊 Naive Bayes Baseline</h3>
-      <div class="big" style="color:#e67e22">74.0%</div>
+      <div class="big" style="color:#e67e22">78.1%</div>
       <div class="sub">Test Accuracy · Fast, good probability estimates</div>
       <div style="margin-top:12px">
-        <span class="badge" style="background:rgba(230,126,34,.15);color:#e67e22">CV: 73.8% ± 2.5%</span>
+        <span class="badge" style="background:rgba(230,126,34,.15);color:#e67e22">CV: 82.0% ± 2.1%</span>
       </div>
     </div>
   </div>
@@ -215,21 +215,23 @@
     <h3>📈 Model Performance Comparison</h3>
     <div style="margin:16px 0">
       <div style="font-size:0.8rem;color:var(--subtext);margin-bottom:10px;font-weight:600;text-transform:uppercase">Logistic Regression</div>
-      <div class="model-bar"><div class="label">Accuracy</div><div class="bar-bg"><div class="bar-fill lr" style="width:79.2%">79.2%</div></div></div>
+      <div class="model-bar"><div class="label">Accuracy</div><div class="bar-bg"><div class="bar-fill lr" style="width:79.7%">79.7%</div></div></div>
       <div class="model-bar"><div class="label">Precision (Pos)</div><div class="bar-bg"><div class="bar-fill lr" style="width:83%">83%</div></div></div>
-      <div class="model-bar"><div class="label">Recall (Pos)</div><div class="bar-bg"><div class="bar-fill lr" style="width:88%">88%</div></div></div>
-      <div class="model-bar"><div class="label">F1 (Pos)</div><div class="bar-bg"><div class="bar-fill lr" style="width:85%">85%</div></div></div>
-      <div class="model-bar"><div class="label">Precision (Neg)</div><div class="bar-bg"><div class="bar-fill lr" style="width:74%">74%</div></div></div>
+      <div class="model-bar"><div class="label">Recall (Pos)</div><div class="bar-bg"><div class="bar-fill lr" style="width:89%">89%</div></div></div>
+      <div class="model-bar"><div class="label">F1 (Pos)</div><div class="bar-bg"><div class="bar-fill lr" style="width:86%">86%</div></div></div>
+      <div class="model-bar"><div class="label">Precision (Neg)</div><div class="bar-bg"><div class="bar-fill lr" style="width:75%">75%</div></div></div>
       <div class="model-bar"><div class="label">Recall (Neg)</div><div class="bar-bg"><div class="bar-fill lr" style="width:77%">77%</div></div></div>
+      <div class="model-bar"><div class="label">F1 (Neg)</div><div class="bar-bg"><div class="bar-fill lr" style="width:76%">76%</div></div></div>
     </div>
     <div style="margin:16px 0">
       <div style="font-size:0.8rem;color:var(--subtext);margin-bottom:10px;font-weight:600;text-transform:uppercase">Multinomial Naive Bayes</div>
-      <div class="model-bar"><div class="label">Accuracy</div><div class="bar-bg"><div class="bar-fill nb" style="width:74%">74.0%</div></div></div>
-      <div class="model-bar"><div class="label">Precision (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:72%">72%</div></div></div>
-      <div class="model-bar"><div class="label">Recall (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:96%">96%</div></div></div>
-      <div class="model-bar"><div class="label">F1 (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:83%">83%</div></div></div>
-      <div class="model-bar"><div class="label">Precision (Neg)</div><div class="bar-bg"><div class="bar-fill nb" style="width:79%">79%</div></div></div>
-      <div class="model-bar"><div class="label">Recall (Neg)</div><div class="bar-bg"><div class="bar-fill nb" style="width:51%">51%</div></div></div>
+      <div class="model-bar"><div class="label">Accuracy</div><div class="bar-bg"><div class="bar-fill nb" style="width:78.1%">78.1%</div></div></div>
+      <div class="model-bar"><div class="label">Precision (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:78%">78%</div></div></div>
+      <div class="model-bar"><div class="label">Recall (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:94%">94%</div></div></div>
+      <div class="model-bar"><div class="label">F1 (Pos)</div><div class="bar-bg"><div class="bar-fill nb" style="width:85%">85%</div></div></div>
+      <div class="model-bar"><div class="label">Precision (Neg)</div><div class="bar-bg"><div class="bar-fill nb" style="width:77%">77%</div></div></div>
+      <div class="model-bar"><div class="label">Recall (Neg)</div><div class="bar-bg"><div class="bar-fill nb" style="width:66%">66%</div></div></div>
+      <div class="model-bar"><div class="label">F1 (Neg)</div><div class="bar-bg"><div class="bar-fill nb" style="width:70%">71%</div></div></div>
     </div>
   </div>
 
@@ -247,7 +249,7 @@
         </div>
         <div style="margin:14px 0;padding:14px;background:var(--dark);border-radius:8px">
           <div style="font-weight:600;font-size:.85rem;margin-bottom:6px">✅ Higher Negative Recall</div>
-          <div style="font-size:.8rem;color:var(--subtext)">77% vs 51% — LR correctly identifies 77% of negative reviews, critical for complaint detection.</div>
+          <div style="font-size:.8rem;color:var(--subtext)">77% vs 66% — LR correctly identifies 77% of negative reviews, critical for complaint detection.</div>
         </div>
         <div style="margin:14px 0;padding:14px;background:var(--dark);border-radius:8px">
           <div style="font-weight:600;font-size:.85rem;margin-bottom:6px">✅ Stable Cross-Validation</div>
@@ -269,7 +271,7 @@
   <div class="grid g2" style="margin-bottom:20px">
     <div class="card" style="--accent-color:#9b59b6">
       <h3>LDA Coherence Score (c_v)</h3>
-      <div class="big" style="color:#9b59b6">0.4513</div>
+      <div class="big" style="color:#9b59b6">0.4768</div>
       <div class="sub">Scores above 0.4 indicate meaningful topic separation</div>
     </div>
     <div class="card" style="--accent-color:#1abc9c">
@@ -543,8 +545,8 @@ new Chart(document.getElementById('f1Bar'), {
   data:{
     labels:['Negative','Positive','Weighted Avg'],
     datasets:[
-      {label:'Logistic Regression',data:[0.75,0.85,0.77],backgroundColor:'rgba(52,152,219,.8)',borderRadius:4},
-      {label:'Naive Bayes',data:[0.62,0.83,0.70],backgroundColor:'rgba(230,126,34,.8)',borderRadius:4}
+      {label:'Logistic Regression',data:[0.76,0.86,0.78],backgroundColor:'rgba(52,152,219,.8)',borderRadius:4},
+      {label:'Naive Bayes',data:[0.71,0.85,0.75],backgroundColor:'rgba(230,126,34,.8)',borderRadius:4}
     ]
   },
   options:{responsive:true,maintainAspectRatio:false,
